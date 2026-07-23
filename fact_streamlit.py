@@ -84,10 +84,16 @@ st.divider()
 
 
 
+
 @st.cache_data
 def load_data():
-    df = pd.read_csv("Nassau Candy Distributor.csv")
+
+    df = pd.read_csv(r"C:\Users\HP\Downloads\Nassau Candy Distributor.csv")
+
     return df
+
+df = load_data()
+
 
 
 
